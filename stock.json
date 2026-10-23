@@ -1,0 +1,16 @@
+{
+  "maj": "2026-10-23",
+  "regle": "0 bouteille = out, 1 à 5 = low, 6 et plus = ok",
+  "etats": {
+    "passion": "ok",
+    "chocolat": "ok",
+    "citron": "ok",
+    "ananas": "low",
+    "bissap": "ok",
+    "creme_bissap": "ok",
+    "corossol": "ok",
+    "mandarine": "ok",
+    "mangoustan": "ok",
+    "cocota": "ok"
+  }
+}

@@ -2003,6 +2003,13 @@ function sendProRequest(){
 }
 
 renderProducts();renderCart();
+// Disponibilités réelles : stock.json est mis à jour depuis le stock de l'app (aucune quantité publiée).
+fetch('stock.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{
+  if(!d||!d.etats)return;
+  products.forEach(p=>{const e=d.etats[p.key];if(!e||p.preorder)return;
+    p.outOfStock=e==='out';p.stock=e==='out'?'out':e;});
+  renderProducts();
+}).catch(()=>{});
 </script>
 <!-- ── TOAST RECOMMANDER ── -->
 <div class="recommend-toast" id="recommend-toast">
