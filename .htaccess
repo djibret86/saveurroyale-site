@@ -13,3 +13,26 @@ RewriteRule ^(product|produit|store|shop|boutique|panier|cart|checkout|commande|
 # 3. Toute autre adresse inconnue affiche le site plutôt qu'une page d'erreur
 ErrorDocument 404 /index.html
 # ===== fin du bloc Saveur Royale =====
+
+# ===== Sécurité (en-têtes) — chaque bloc est ignoré si le module manque, pas d'erreur 500 =====
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
+  # CSP volontairement souple : interdit l'affichage du site dans une autre page et les plugins,
+  # sans bloquer les scripts de la page, les photos, Google Fonts ni Facebook.
+  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+</IfModule>
+
+# ===== Vitesse : compression et cache des fichiers fixes (pas de index.html ni stock.json) =====
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+</IfModule>
