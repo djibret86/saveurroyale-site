@@ -23,7 +23,7 @@ ErrorDocument 404 /index.html
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
   # CSP volontairement souple : interdit l'affichage du site dans une autre page et les plugins,
   # sans bloquer les scripts de la page, les photos, Google Fonts ni Facebook.
-  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
 </IfModule>
 
 # ===== Vitesse : compression et cache des fichiers fixes (pas de index.html ni stock.json) =====
