@@ -1,8 +1,8 @@
 {
-  "maj": "2026-11-06",
+  "maj": "2026-11-08",
   "regle": "0 bouteille = out, 1 à 5 = low, 6 et plus = ok",
   "etats": {
-    "passion": "out",
+    "passion": "ok",
     "chocolat": "ok",
     "citron": "ok",
     "ananas": "out",
