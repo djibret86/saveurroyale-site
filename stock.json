@@ -1,5 +1,5 @@
 {
-  "maj": "2026-11-08",
+  "maj": "2026-11-09",
   "regle": "0 bouteille = out, 1 à 5 = low, 6 et plus = ok",
   "etats": {
     "passion": "ok",
@@ -7,11 +7,11 @@
     "citron": "ok",
     "ananas": "out",
     "bissap": "ok",
-    "creme_bissap": "ok",
+    "creme_bissap": "low",
     "corossol": "ok",
     "mandarine": "ok",
     "mangoustan": "ok",
     "cocota": "ok",
-    "liqueur_cocota": "ok"
+    "liqueur_cocota": "low"
   }
 }
