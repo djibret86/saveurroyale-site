@@ -951,6 +951,12 @@ section[id]{scroll-margin-top:76px;}
   .craft-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0.4rem;}
   .craft-step span{font-size:0.52rem;letter-spacing:0.06em;}
 }
+/* Lisibilité sur téléphone : textes secondaires plus lisibles */
+@media(max-width:768px){.product-desc{font-size:0.82rem;opacity:0.82;}.faq-a{opacity:0.85;}.univers-desc{opacity:0.85;}.cocktail-ingredients li{opacity:0.88;}.cocktail-prep{opacity:0.85;}.tier-bottles{opacity:0.75;}.tier-perks{opacity:0.92;}}
+/* Bouton WhatsApp flottant */
+.wa-float{position:fixed;right:16px;bottom:20px;z-index:150;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.45);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity 0.3s,transform 0.3s;}
+.wa-float.visible{opacity:1;transform:none;pointer-events:auto;}
+.footer-links{margin-top:0.8rem;font-size:0.7rem;letter-spacing:0.1em;}.footer-links a{color:rgba(201,165,90,0.85);text-decoration:none;}
 /* Téléphones : rien ne dépasse de l'écran (sinon la page entière est dézoomée) */
 @media(max-width:768px){footer{flex-direction:column;}}
 @media(max-width:480px){.products-grid{grid-template-columns:minmax(0,1fr);}.univers-grid{grid-template-columns:minmax(0,1fr) !important;}}
@@ -1025,7 +1031,7 @@ fbq('track', 'PageView');</script>
 <section id="produits">
   <div class="products-header">
     <span class="section-label">Notre sélection exclusive</span>
-    <h2 class="section-title">Nos <em>Liqueurs</em></h2>
+    <h2 class="section-title">Notre <em>Gamme</em></h2>
   </div>
   <div class="products-grid" id="products-grid"></div>
 </section>
@@ -1526,10 +1532,13 @@ fbq('track', 'PageView');</script>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
     </a>
   </div>
-  <p><a href="mailto:contact@saveurroyale.com" style="color:rgba(201,165,90,0.5);text-decoration:none;font-size:0.72rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">contact@saveurroyale.com</a>
+  <p><a href="mailto:contact@saveurroyale.com" style="color:rgba(201,165,90,0.85);text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">contact@saveurroyale.com</a>
   © 2014–2026 Saveur Royale® · Abidjan, Côte d'Ivoire<br>Liqueurs artisanales d'exception<br>Saveur Royale® est une marque déposée. Tous droits réservés.</p>
+  <p class="footer-links"><a href="confidentialite.html">Confidentialité et données personnelles</a></p>
   <p class="mention-legale">L'abus d'alcool est dangereux pour la santé.<br>À consommer avec modération. Vente interdite aux mineurs.</p>
 </footer>
+<a href="https://wa.me/2250544705530?text=Bonjour%20Saveur%20Royale%2C%20je%20souhaite%20commander." class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Commander sur WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a>
+<script>(function(){var b=document.getElementById('wa-float'),h=document.querySelector('.hero');function u(){var o=document.querySelector('.cart-panel.open,.order-modal-overlay.open,#mobile-menu.open');b.classList.toggle('visible',!o&&scrollY>(h?h.offsetHeight*0.8:500));}addEventListener('scroll',u,{passive:true});setInterval(u,800);})();</script>
 <script>(function(){var s=document.getElementById('brand-logo').src;document.querySelectorAll('img[data-logo]').forEach(function(i){i.src=s;});})();</script>
 
 
