@@ -35,4 +35,5 @@ ErrorDocument 404 /index.html
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
