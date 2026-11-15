@@ -11,7 +11,7 @@ RewriteRule ^index\.php/.+$ / [L,R=301]
 RewriteRule ^(product|produit|store|shop|boutique|panier|cart|checkout|commande|my-account|mon-compte|product-category|categorie-produit)(/.*)?$ / [L,R=301]
 
 # 3. Toute autre adresse inconnue affiche le site plutôt qu'une page d'erreur
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html
 # ===== fin du bloc Saveur Royale =====
 
 # ===== Sécurité (en-têtes) — chaque bloc est ignoré si le module manque, pas d'erreur 500 =====
