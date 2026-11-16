@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.saveurroyale.com/og-image.jpg">
 <link rel="canonical" href="https://www.saveurroyale.com/">
-<meta name="contact" content="contact@saveurroyale.com">
+<meta name="contact" content="saveurroyale@gmail.com">
 <meta name="facebook-domain-verification" content="ev557xnp88nracaz0h1lrudot8z76z" />
 <title>Saveur Royale - Liqueurs de fruits made in Côte d'Ivoire</title>
 <link rel="icon" type="image/png" href="img/icone-1.png">
@@ -1130,6 +1130,7 @@ section[id]{scroll-margin-top:76px;}
 .out-of-stock{opacity:1 !important;}.out-of-stock .product-img-wrap{opacity:0.55;}
 h3.product-cat-label,h4.product-name{margin-top:0;font-weight:inherit;}
 .cocktails-grid:focus-visible{outline:1px solid var(--or);outline-offset:4px;}
+.prix-euro{font-family:'Jost',sans-serif;font-size:0.62em;opacity:0.75;white-space:nowrap;}
 /* Bouton WhatsApp flottant */
 .wa-float{position:fixed;right:16px;bottom:20px;z-index:150;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.45);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity 0.3s,transform 0.3s;}
 .wa-float.visible{opacity:1;transform:none;pointer-events:auto;}
@@ -1693,7 +1694,7 @@ try{if(localStorage.getItem('sr-cookies')==='oui')srChargerPixel();}catch(e){}</
   <div class="contact-inner">
     <span class="section-label">Commande & Contact</span>
     <h2 class="section-title">Offrez-vous <em>l'exception</em></h2>
-    <p>Disponible 7j/7 via WhatsApp · Livraison à Abidjan<br><a href="mailto:contact@saveurroyale.com" style="color:var(--or);text-decoration:none;letter-spacing:0.05em;">contact@saveurroyale.com</a></p>
+    <p>Disponible 7j/7 via WhatsApp · Livraison à Abidjan<br><a href="mailto:saveurroyale@gmail.com" style="color:var(--or);text-decoration:none;letter-spacing:0.05em;">saveurroyale@gmail.com</a></p>
     <div class="livraison-info">
       <div class="livraison-item">
         <span class="livraison-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
@@ -1727,7 +1728,7 @@ try{if(localStorage.getItem('sr-cookies')==='oui')srChargerPixel();}catch(e){}</
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
     </a>
   </div>
-  <p><a href="mailto:contact@saveurroyale.com" style="color:rgba(201,165,90,0.85);text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">contact@saveurroyale.com</a>
+  <p><a href="mailto:saveurroyale@gmail.com" style="color:rgba(201,165,90,0.85);text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">saveurroyale@gmail.com</a>
   © 2014–2026 Saveur Royale® · Abidjan, Côte d'Ivoire<br>Liqueurs artisanales d'exception<br>Saveur Royale® est une marque déposée. Tous droits réservés.</p>
   <p class="footer-links"><a href="mentions-legales.html">Mentions légales et CGV</a> · <a href="confidentialite.html">Confidentialité</a></p>
   <p class="mention-legale">L'abus d'alcool est dangereux pour la santé.<br>À consommer avec modération. Vente interdite aux mineurs.</p>
@@ -1931,7 +1932,7 @@ function renderProducts(){
         ? `<button class="preorder-btn" onclick="preorderProduct('${safeName}',${p.price},${dep},'${(etaTxt||'Disponible sous 30 jours').replace(/'/g,"\\'")}')">Précommander</button>`
         : `<button class="add-to-cart" onclick="addToCart(${p.id})">Sélectionner</button>`;
       const cardClass = p.outOfStock ? 'product-card out-of-stock' : 'product-card';
-      return `<div class="${cardClass}">${vis}<div class="product-body">${badge}<h4 class="product-name">${p.name}</h4><div class="product-desc">${p.desc}</div>${specs}${stockHtml}${eta}${serieHtml}<div class="product-footer"><div class="product-price">${p.price.toLocaleString('fr-FR')} FCFA</div>${stockBtn}</div></div></div>`;
+      return `<div class="${cardClass}">${vis}<div class="product-body">${badge}<h4 class="product-name">${p.name}</h4><div class="product-desc">${p.desc}</div>${specs}${stockHtml}${eta}${serieHtml}<div class="product-footer"><div class="product-price">${p.price.toLocaleString('fr-FR')} FCFA<span class="prix-euro"> · ≈ ${(p.price/655.957).toFixed(2).replace('.',',')} €</span></div>${stockBtn}</div></div></div>`;
     }).join('');
   });
   document.getElementById('products-grid').innerHTML=out;
