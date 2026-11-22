@@ -3,9 +3,24 @@
 (function (racine) {
   'use strict';
 
+  // Maximum de points atteignable par royaume (somme, question par question, du meilleur gain possible)
+  function maxima(matrice) {
+    var m = {};
+    matrice.ordre_royaumes.forEach(function (c) {
+      m[c] = 0;
+      matrice.questions.forEach(function (q) {
+        m[c] += Math.max.apply(null, q.reponses.map(function (r) { return r.royaumes[c] || 0; }));
+      });
+    });
+    return m;
+  }
+
   // reponses : { q1: 'r1', q2: 'r3', ... } — une réponse par question
-  function calculer(matrice, reponses) {
+  // alpha : 0 = score brut, 1 = score relatif ; par défaut, la valeur de royaumes.json
+  function calculer(matrice, reponses, alpha) {
     var ordre = matrice.ordre_royaumes;
+    if (alpha === undefined) alpha = matrice.normalisation ? matrice.normalisation.alpha : 0;
+    var maxi = maxima(matrice);
     var ptsRoyaumes = {}, ptsProduits = {};
     ordre.forEach(function (c) { ptsRoyaumes[c] = 0; });
     matrice.royaumes.forEach(function (r) {
@@ -28,9 +43,13 @@
       return meilleur;
     }
 
+    // Score normalisé : points / maximum^alpha (arrondi pour comparer sans erreur de virgule)
+    var score = {};
+    ordre.forEach(function (c) { score[c] = Math.round(1e9 * ptsRoyaumes[c] / Math.pow(maxi[c], alpha)) / 1e9; });
+
     // Royaume gagnant et règles d'égalité (documentées dans royaumes.json)
-    var max = Math.max.apply(null, ordre.map(function (c) { return ptsRoyaumes[c]; }));
-    var exAequo = ordre.filter(function (c) { return ptsRoyaumes[c] === max; });
+    var max = Math.max.apply(null, ordre.map(function (c) { return score[c]; }));
+    var exAequo = ordre.filter(function (c) { return score[c] === max; });
     var regle = 'points';
     if (exAequo.length > 1) {
       regle = 'score_produit';
@@ -49,9 +68,17 @@
     if (exAequo.length > 1) regle = 'ordre_fixe';
     var royaume = exAequo[0];
 
-    // Produits de la famille, du meilleur au moins bon (égalité : ordre de la liste)
-    var famille = parCode[royaume].produits.slice().sort(function (a, b) {
-      return ptsProduits[b] - ptsProduits[a] || parCode[royaume].produits.indexOf(a) - parCode[royaume].produits.indexOf(b);
+    // Produits de la famille, du meilleur au moins bon.
+    // Égalité : règle conditionnelle de royaumes.json (« departage_produits »), sinon ordre de la liste.
+    var ordreFam = parCode[royaume].produits.slice();
+    (matrice.departage_produits || []).forEach(function (d) {
+      if (d.royaume === royaume && reponses[d.question] === d.reponse && ordreFam.indexOf(d.favoriser) > 0) {
+        ordreFam.splice(ordreFam.indexOf(d.favoriser), 1);
+        ordreFam.unshift(d.favoriser);
+      }
+    });
+    var famille = ordreFam.slice().sort(function (a, b) {
+      return ptsProduits[b] - ptsProduits[a] || ordreFam.indexOf(a) - ordreFam.indexOf(b);
     });
     var egaliteProduit = famille.length > 1 && ptsProduits[famille[0]] === ptsProduits[famille[1]];
 
@@ -62,6 +89,7 @@
       regle: regle,
       egaliteProduit: egaliteProduit,
       ptsRoyaumes: ptsRoyaumes,
+      scores: score,
       ptsProduits: ptsProduits
     };
   }
@@ -80,7 +108,7 @@
     return { aCommander: null, etat: 'out', remplacement: false };
   }
 
-  var M = { calculer: calculer, disponibilite: disponibilite };
+  var M = { calculer: calculer, disponibilite: disponibilite, maxima: maxima };
   if (typeof module !== 'undefined' && module.exports) module.exports = M;
   else racine.SRQuizMoteur = M;
 })(this);

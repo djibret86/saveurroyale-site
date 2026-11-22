@@ -13,7 +13,7 @@
   "1. Royaumes à égalité de points : meilleur score produit de leur famille.",
   "2. Puis royaume principal (+2) de la réponse à Q3, puis à Q7, s'il fait partie des ex aequo.",
   "3. Puis ordre fixe : VC, DE, CO, FP, EA, ET.",
-  "Produits d'une même famille à égalité : ordre de la liste 'produits' du royaume."
+  "Produits d'une même famille à égalité : règle 'departage_produits', sinon ordre de la liste 'produits' du royaume."
  ],
  "revelatrices": [
   "q3",
@@ -437,5 +437,19 @@
     }
    ]
   }
- ]
+ ],
+ "departage_produits": [
+  {
+   "royaume": "DE",
+   "question": "q5",
+   "reponse": "r1",
+   "favoriser": "cocota",
+   "raison": "Validé par Djibret : si Q5 R1 (crème douce légèrement acidulée), la Crème de Cocota passe devant en cas d'égalité."
+  }
+ ],
+ "normalisation": {
+  "alpha": 0,
+  "formule": "score = points / maximum_du_royaume ^ alpha (0 = brut, 1 = relatif)",
+  "statut": "À CALIBRER — valeur provisoire"
+ }
 }
