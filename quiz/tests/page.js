@@ -84,6 +84,7 @@ async function jouer(p, suite) {
     ok(href.startsWith('https://wa.me/2250544705530?text=') && decodeURIComponent(href).includes(nom), '  lien WhatsApp avec le royaume');
     const titreDec = await p.textContent('#q-decouvrir-titre');
     ok(code === 'VC' ? titreDec.includes('royaume voisin') : titreDec === 'À découvrir aussi', `  rubrique « ${titreDec} » : ${await p.textContent('#q-decouvrir-nom')}`);
+    if (code === 'VC') ok((await p.textContent('#q-decouvrir-texte')).includes('une autre facette des saveurs de Cocota') && !(await p.textContent('#q-decouvrir-texte')).includes('que vous recherchez'), '  texte neutre dans « Dans le royaume voisin »');
     await p.click('#q-commander'); await p.click('#q-partager');
     const ev = await p.evaluate(() => window.__ev);
     ok(['quiz_started', 'quiz_completed', 'whatsapp_clicked', 'result_shared'].every(e => ev.includes(e)), '  événements GoatCounter : ' + ev.join(', '));

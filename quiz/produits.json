@@ -74,7 +74,8 @@
    "categorie": "creme",
    "image": "../img/cocota.webp",
    "explication": "Robe dorée, notes sucrées et légèrement exotiques, onctuosité rare : la crème douce et délicatement acidulée que vous recherchez.",
-   "badge": "Édition limitée"
+   "badge": "Édition limitée",
+   "explication_voisin": "Robe dorée, notes sucrées et légèrement exotiques, onctuosité rare. Une crème onctueuse aux notes douces et délicatement acidulées, pour découvrir une autre facette des saveurs de Cocota."
   },
   "liqueur_cocota": {
    "nom": "Liqueur de Cocota",

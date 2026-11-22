@@ -169,7 +169,8 @@
     im2.src = autre.image; im2.alt = 'Bouteille Saveur Royale ' + autre.nom;
     $('q-decouvrir-nom').textContent = autre.nom;
     $('q-decouvrir-specs').textContent = specs(autre);
-    $('q-decouvrir-texte').textContent = autre.explication;
+    // Royaume voisin : texte neutre s'il existe (ne suppose pas les préférences du visiteur)
+    $('q-decouvrir-texte').textContent = (r.decouvrirVoisin && autre.explication_voisin) || autre.explication;
     badge($('q-decouvrir-badge'), autre);
 
     montrer('q-resultat');
