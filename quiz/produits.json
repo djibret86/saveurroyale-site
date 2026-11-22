@@ -1,0 +1,83 @@
+{
+ "source": "index.html (const products), relevé le 22.11.2026. Nom « Liqueur de Bissap » pour la clé bissap (décision de Djibret).",
+ "volume_cl": 75,
+ "produits": {
+  "passion": {
+   "nom": "Passion",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/passion.webp"
+  },
+  "bissap": {
+   "nom": "Liqueur de Bissap",
+   "prix": 7000,
+   "degre": 35,
+   "categorie": "liqueur",
+   "image": "../img/bissap.webp"
+  },
+  "ananas": {
+   "nom": "Ananas",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/ananas.webp"
+  },
+  "citron": {
+   "nom": "Citron",
+   "prix": 7000,
+   "degre": 35,
+   "categorie": "liqueur",
+   "image": "../img/citron.webp"
+  },
+  "mandarine": {
+   "nom": "Mandarine",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/mandarine.webp"
+  },
+  "chocolat": {
+   "nom": "Crème de Chocolat",
+   "prix": 10000,
+   "degre": 12,
+   "categorie": "creme",
+   "image": "../img/chocolat.webp"
+  },
+  "creme_bissap": {
+   "nom": "Crème de Bissap",
+   "prix": 7000,
+   "degre": 15,
+   "categorie": "creme",
+   "image": "../img/creme_bissap.webp"
+  },
+  "corossol": {
+   "nom": "Corossol",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/corossol.webp"
+  },
+  "cocota": {
+   "nom": "Crème de Cocota",
+   "prix": 8000,
+   "degre": 15,
+   "categorie": "creme",
+   "image": "../img/cocota.webp"
+  },
+  "liqueur_cocota": {
+   "nom": "Liqueur de Cocota",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/liqueur_cocota.webp"
+  },
+  "mangoustan": {
+   "nom": "Mangoustan",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/mangoustan.webp"
+  }
+ }
+}

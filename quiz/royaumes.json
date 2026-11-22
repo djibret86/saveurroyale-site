@@ -1,0 +1,441 @@
+{
+ "version": 2,
+ "statut": "Matrice validée par Djibret le 22.11.2026 (Q1-Q7, 28 réponses). Ne pas modifier sans validation.",
+ "ordre_royaumes": [
+  "VC",
+  "DE",
+  "CO",
+  "FP",
+  "EA",
+  "ET"
+ ],
+ "regles_egalite": [
+  "1. Royaumes à égalité de points : meilleur score produit de leur famille.",
+  "2. Puis royaume principal (+2) de la réponse à Q3, puis à Q7, s'il fait partie des ex aequo.",
+  "3. Puis ordre fixe : VC, DE, CO, FP, EA, ET.",
+  "Produits d'une même famille à égalité : ordre de la liste 'produits' du royaume."
+ ],
+ "revelatrices": [
+  "q3",
+  "q7"
+ ],
+ "royaumes": [
+  {
+   "code": "VC",
+   "nom": "Le Velours Cacaoté",
+   "complementaire": "DE",
+   "produits": [
+    "chocolat"
+   ]
+  },
+  {
+   "code": "DE",
+   "nom": "La Douceur Exotique",
+   "complementaire": "VC",
+   "produits": [
+    "creme_bissap",
+    "cocota"
+   ]
+  },
+  {
+   "code": "CO",
+   "nom": "Le Caractère des Origines",
+   "complementaire": "FP",
+   "produits": [
+    "bissap",
+    "liqueur_cocota"
+   ]
+  },
+  {
+   "code": "FP",
+   "nom": "Les Fruits Précieux",
+   "complementaire": "CO",
+   "produits": [
+    "mangoustan",
+    "corossol"
+   ]
+  },
+  {
+   "code": "EA",
+   "nom": "L'Éclat des Agrumes",
+   "complementaire": "ET",
+   "produits": [
+    "citron",
+    "mandarine"
+   ]
+  },
+  {
+   "code": "ET",
+   "nom": "L'Évasion Tropicale",
+   "complementaire": "EA",
+   "produits": [
+    "passion",
+    "ananas"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "titre": "Univers et ambiance",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une soirée intime et chaleureuse",
+     "royaumes": {
+      "VC": 2,
+      "DE": 1
+     },
+     "produits": {
+      "chocolat": 2
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Un apéritif créatif et pétillant",
+     "royaumes": {
+      "DE": 2,
+      "ET": 1
+     },
+     "produits": {
+      "creme_bissap": 1,
+      "cocota": 1
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Une soirée aux saveurs africaines affirmées",
+     "royaumes": {
+      "CO": 2,
+      "FP": 1
+     },
+     "produits": {
+      "bissap": 1,
+      "liqueur_cocota": 1
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Un moment ensoleillé et fruité",
+     "royaumes": {
+      "ET": 2,
+      "FP": 1
+     },
+     "produits": {
+      "passion": 1,
+      "ananas": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "q2",
+   "titre": "Sensation recherchée",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une texture crémeuse et enveloppante",
+     "royaumes": {
+      "DE": 2,
+      "VC": 1
+     },
+     "produits": {
+      "creme_bissap": 1,
+      "cocota": 1
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Une acidité plus affirmée",
+     "royaumes": {
+      "CO": 2,
+      "FP": 1
+     },
+     "produits": {
+      "liqueur_cocota": 2
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Une fraîcheur d'agrume équilibrée",
+     "royaumes": {
+      "EA": 2,
+      "ET": 1
+     },
+     "produits": {
+      "citron": 1,
+      "mandarine": 1
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Une fraîcheur fruitée, ronde et moelleuse",
+     "royaumes": {
+      "FP": 2,
+      "ET": 1
+     },
+     "produits": {
+      "corossol": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "q3",
+   "titre": "Notes gustatives",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Cacao et pomme",
+     "royaumes": {
+      "VC": 2,
+      "DE": 1
+     },
+     "produits": {
+      "chocolat": 3
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Hibiscus et menthe",
+     "royaumes": {
+      "DE": 2,
+      "CO": 1
+     },
+     "produits": {
+      "creme_bissap": 2
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Fruits exotiques et tanins",
+     "royaumes": {
+      "FP": 2,
+      "CO": 1
+     },
+     "produits": {
+      "mangoustan": 3
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Agrumes et amertume",
+     "royaumes": {
+      "EA": 2,
+      "CO": 1
+     },
+     "produits": {
+      "mandarine": 2,
+      "citron": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "titre": "Manière de déguster",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une dégustation chocolatée, délicatement réchauffée",
+     "royaumes": {
+      "VC": 2,
+      "DE": 1
+     },
+     "produits": {
+      "chocolat": 2
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Un cocktail crémeux et pétillant",
+     "royaumes": {
+      "DE": 2,
+      "ET": 1
+     },
+     "produits": {
+      "creme_bissap": 1,
+      "cocota": 1
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Une liqueur pure et affirmée",
+     "royaumes": {
+      "CO": 2,
+      "FP": 1
+     },
+     "produits": {
+      "bissap": 1,
+      "liqueur_cocota": 1
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Un verre frais et fruité",
+     "royaumes": {
+      "FP": 2,
+      "EA": 1
+     },
+     "produits": {
+      "corossol": 2,
+      "mangoustan": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "q5",
+   "titre": "Saveur recherchée",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une crème douce légèrement acidulée",
+     "royaumes": {
+      "DE": 2,
+      "VC": 1
+     },
+     "produits": {
+      "cocota": 2
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Une saveur florale intense",
+     "royaumes": {
+      "CO": 2,
+      "FP": 1
+     },
+     "produits": {
+      "bissap": 2
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Un fruit rare et tannique",
+     "royaumes": {
+      "FP": 2,
+      "ET": 1
+     },
+     "produits": {
+      "mangoustan": 2
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Une fraîcheur citronnée non agressive",
+     "royaumes": {
+      "EA": 2,
+      "ET": 1
+     },
+     "produits": {
+      "citron": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "q6",
+   "titre": "Type de dégustation",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une dégustation lente, en fin de soirée",
+     "royaumes": {
+      "VC": 2,
+      "DE": 1
+     },
+     "produits": {
+      "chocolat": 1
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Un cocktail fruité aux parfums tropicaux",
+     "royaumes": {
+      "ET": 2,
+      "EA": 1
+     },
+     "produits": {
+      "passion": 2,
+      "ananas": 1
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Une liqueur africaine avec une belle présence en bouche",
+     "royaumes": {
+      "CO": 2,
+      "FP": 1
+     },
+     "produits": {
+      "liqueur_cocota": 2,
+      "bissap": 1
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Un apéritif frais avec une pointe d'amertume",
+     "royaumes": {
+      "EA": 2,
+      "FP": 1
+     },
+     "produits": {
+      "mandarine": 2,
+      "citron": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "q7",
+   "titre": "Finale souhaitée",
+   "reponses": [
+    {
+     "id": "r1",
+     "texte": "Une gourmandise cacaotée avec une note fruitée",
+     "royaumes": {
+      "VC": 2,
+      "DE": 1
+     },
+     "produits": {
+      "chocolat": 2
+     }
+    },
+    {
+     "id": "r2",
+     "texte": "Une douceur tropicale et vanillée",
+     "royaumes": {
+      "ET": 2,
+      "FP": 1
+     },
+     "produits": {
+      "ananas": 2
+     }
+    },
+    {
+     "id": "r3",
+     "texte": "Une finale fraîche, ronde et moelleuse",
+     "royaumes": {
+      "FP": 2,
+      "ET": 1
+     },
+     "produits": {
+      "corossol": 2
+     }
+    },
+    {
+     "id": "r4",
+     "texte": "Une légère amertume d'agrume, élégante et persistante",
+     "royaumes": {
+      "EA": 2,
+      "CO": 1
+     },
+     "produits": {
+      "mandarine": 2
+     }
+    }
+   ]
+  }
+ ]
+}
