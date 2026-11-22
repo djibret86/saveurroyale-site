@@ -68,24 +68,32 @@
     if (exAequo.length > 1) regle = 'ordre_fixe';
     var royaume = exAequo[0];
 
-    // Produits de la famille, du meilleur au moins bon.
+    // Produits d'un royaume, du meilleur au moins bon.
     // Égalité : règle conditionnelle de royaumes.json (« departage_produits »), sinon ordre de la liste.
-    var ordreFam = parCode[royaume].produits.slice();
-    (matrice.departage_produits || []).forEach(function (d) {
-      if (d.royaume === royaume && reponses[d.question] === d.reponse && ordreFam.indexOf(d.favoriser) > 0) {
-        ordreFam.splice(ordreFam.indexOf(d.favoriser), 1);
-        ordreFam.unshift(d.favoriser);
-      }
-    });
-    var famille = ordreFam.slice().sort(function (a, b) {
-      return ptsProduits[b] - ptsProduits[a] || ordreFam.indexOf(a) - ordreFam.indexOf(b);
-    });
+    function classer(code) {
+      var ordreFam = parCode[code].produits.slice();
+      (matrice.departage_produits || []).forEach(function (d) {
+        if (d.royaume === code && reponses[d.question] === d.reponse && ordreFam.indexOf(d.favoriser) > 0) {
+          ordreFam.splice(ordreFam.indexOf(d.favoriser), 1);
+          ordreFam.unshift(d.favoriser);
+        }
+      });
+      return ordreFam.slice().sort(function (a, b) {
+        return ptsProduits[b] - ptsProduits[a] || ordreFam.indexOf(a) - ordreFam.indexOf(b);
+      });
+    }
+    var famille = classer(royaume);
+    // « À découvrir aussi » : l'autre bouteille du royaume, ou, pour une famille d'une seule bouteille,
+    // la meilleure du royaume complémentaire (« Dans le royaume voisin »).
+    var voisin = famille.length > 1 ? null : parCode[royaume].complementaire;
+    var decouvrir = voisin ? classer(voisin)[0] : famille[1];
     var egaliteProduit = famille.length > 1 && ptsProduits[famille[0]] === ptsProduits[famille[1]];
 
     return {
       royaume: royaume,
       produit: famille[0],          // profil gustatif : ne dépend jamais du stock
-      decouvrir: famille.length > 1 ? famille[1] : null,  // « À découvrir aussi » (null si la famille n'a qu'une bouteille)
+      decouvrir: decouvrir,         // « À découvrir aussi »
+      decouvrirVoisin: voisin,      // code du royaume voisin, ou null
       famille: famille,
       regle: regle,
       egaliteProduit: egaliteProduit,

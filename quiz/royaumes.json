@@ -26,7 +26,9 @@
    "complementaire": "DE",
    "produits": [
     "chocolat"
-   ]
+   ],
+   "accroche": "La gourmandise comme art de vivre.",
+   "presentation": "Vous aimez les instants qui s'étirent : une fin de soirée, une lumière douce, un verre que l'on savoure lentement. Votre palais recherche la profondeur du cacao et la rondeur d'une texture enveloppante, sans jamais renoncer à l'élégance."
   },
   {
    "code": "DE",
@@ -35,7 +37,9 @@
    "produits": [
     "creme_bissap",
     "cocota"
-   ]
+   ],
+   "accroche": "La tendresse, avec une pointe d'audace.",
+   "presentation": "Vous recherchez les textures crémeuses et les saveurs qui surprennent en douceur. Créatif, vous aimez les cocktails pétillants et les découvertes qui caressent le palais."
   },
   {
    "code": "CO",
@@ -44,7 +48,9 @@
    "produits": [
     "bissap",
     "liqueur_cocota"
-   ]
+   ],
+   "accroche": "La force d'une terre, sans détour.",
+   "presentation": "Vous aimez les saveurs africaines affirmées, une belle présence en bouche et les liqueurs qui ont du caractère. Une liqueur se déguste pure, et elle doit raconter d'où elle vient."
   },
   {
    "code": "FP",
@@ -53,7 +59,9 @@
    "produits": [
     "mangoustan",
     "corossol"
-   ]
+   ],
+   "accroche": "Le goût du rare.",
+   "presentation": "Vous êtes attiré par les fruits que peu connaissent et par les saveurs qui ne ressemblent à aucune autre. Vous appréciez la fraîcheur, la rondeur et une pointe de mystère."
   },
   {
    "code": "EA",
@@ -62,7 +70,9 @@
    "produits": [
     "citron",
     "mandarine"
-   ]
+   ],
+   "accroche": "La fraîcheur qui a du caractère.",
+   "presentation": "Vous aimez les apéritifs frais, l'équilibre entre douceur et acidité, et une légère amertume élégante qui persiste en bouche. Votre palais cherche la lumière."
   },
   {
    "code": "ET",
@@ -71,7 +81,9 @@
    "produits": [
     "passion",
     "ananas"
-   ]
+   ],
+   "accroche": "Le soleil dans un verre.",
+   "presentation": "Vous aimez les moments ensoleillés, les cocktails fruités et les parfums tropicaux. Pour vous, déguster, c'est s'évader."
   }
  ],
  "questions": [
@@ -451,5 +463,9 @@
   "alpha": 0.7,
   "formule": "score = points / maximum_du_royaume ^ alpha (0 = brut, 1 = relatif)",
   "statut": "Validé par Djibret le 22.11.2026 après calibration (palier stable 0,65–0,75)."
+ },
+ "voisin": {
+  "regle": "Famille d'une seule bouteille (VC) : « À découvrir aussi » = meilleure bouteille du royaume complémentaire, départagée par 'departage_produits' puis l'ordre de la liste.",
+  "titre": "Pour prolonger la découverte — Dans le royaume voisin"
  }
 }
