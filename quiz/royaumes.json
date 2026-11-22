@@ -448,8 +448,8 @@
   }
  ],
  "normalisation": {
-  "alpha": 0,
+  "alpha": 0.7,
   "formule": "score = points / maximum_du_royaume ^ alpha (0 = brut, 1 = relatif)",
-  "statut": "À CALIBRER — valeur provisoire"
+  "statut": "Validé par Djibret le 22.11.2026 après calibration (palier stable 0,65–0,75)."
  }
 }

@@ -41,7 +41,7 @@ for (let n = 0; n < N; n++) {
   }
 }
 const pct = v => (100 * v / N).toFixed(2).padStart(6) + ' %';
-console.log(`Combinaisons simulées : ${N}`);
+console.log(`Combinaisons simulées : ${N} — alpha = ${matrice.normalisation.alpha}`);
 console.log('\nRoyaumes :');
 matrice.royaumes.forEach(r => console.log(`  ${r.code} ${r.nom.padEnd(28)} ${String(freqR[r.code]).padStart(5)} ${pct(freqR[r.code])}`));
 console.log('\nProduits recommandés (profil gustatif, hors stock) :');
@@ -54,3 +54,10 @@ console.log(`Produits jamais recommandés : ${Object.keys(freqP).filter(k => !fr
 console.log(`Contrôle « le stock ne change pas le profil » : ${invariantStock === 0 ? 'OK (0 écart)' : invariantStock + ' ÉCARTS'}`);
 console.log('\nScénarios de stock (direct / remplacement dans la famille / orientation WhatsApp) :');
 Object.entries(dispo).forEach(([s, v]) => console.log(`  ${s.padEnd(9)} ${v.direct} / ${v.remplacement} / ${v.whatsapp}`));
+
+// Contrôle de cohérence avec le rapport de calibration (alpha = 0,7)
+const attendu = { VC: 12.4, DE: 16.6, CO: 14.5, FP: 25.0, EA: 13.8, ET: 17.7 };
+const ecarts = Object.keys(attendu).filter(c => Math.abs(100 * freqR[c] / N - attendu[c]) > 0.06);
+console.log(`\nConformité au rapport de calibration : ${ecarts.length ? 'ÉCART sur ' + ecarts.join(', ') : 'OK (6 royaumes identiques à 0,1 point près)'}`);
+const sansDecouverte = {}; for (let n = 0; n < N; n++) { const rep = {}; let x = n; Q.forEach(q => { rep[q.id] = 'r' + (x % 4 + 1); x = Math.floor(x / 4); }); const r = M.calculer(matrice, rep); if (!r.decouvrir) sansDecouverte[r.royaume] = (sansDecouverte[r.royaume] || 0) + 1; }
+console.log('Résultats sans « À découvrir aussi » (famille d\'une seule bouteille) :', sansDecouverte);

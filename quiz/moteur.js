@@ -85,6 +85,7 @@
     return {
       royaume: royaume,
       produit: famille[0],          // profil gustatif : ne dépend jamais du stock
+      decouvrir: famille.length > 1 ? famille[1] : null,  // « À découvrir aussi » (null si la famille n'a qu'une bouteille)
       famille: famille,
       regle: regle,
       egaliteProduit: egaliteProduit,
