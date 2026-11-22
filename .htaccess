@@ -21,9 +21,11 @@ ErrorDocument 404 /404.html
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
-  # CSP volontairement souple : interdit l'affichage du site dans une autre page et les plugins,
+  # CSP : seuls le site, Facebook (pixel, après accord) et GoatCounter peuvent charger des scripts ou recevoir des données.
+  # (ancienne note) CSP volontairement souple : interdit l'affichage du site dans une autre page et les plugins,
   # sans bloquer les scripts de la page, les photos, Google Fonts ni Facebook.
-  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com https://saveurroyale.goatcounter.com; font-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://saveurroyale.goatcounter.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
 </IfModule>
 
 # ===== Vitesse : compression et cache des fichiers fixes (pas de index.html ni stock.json) =====
