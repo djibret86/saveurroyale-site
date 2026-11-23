@@ -1,0 +1,279 @@
+/* Polices hébergées sur le site (mêmes fichiers que l'accueil) */
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-0365c557.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-fe99e303.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-0365c557.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-fe99e303.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/CormorantGaramond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Jost-920dcbe8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Jost-0428ef9c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Jost-920dcbe8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Jost-0428ef9c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Jost-920dcbe8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Jost-0428ef9c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ── Quiz Saveur Royale : styles propres (classes .q-*) ── */
+:root{--noir:#080604;--espresso:#140E09;--or:#C9A55A;--or-clair:#E8C97A;--creme:#FFFFFF;--texte:#F2EDE4;--filet:rgba(201,165,90,0.22);--vert-wa:#25D366;}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--noir);color:var(--texte);}
+body{font-family:'Jost',Helvetica,Arial,sans-serif;font-weight:300;font-size:16px;line-height:1.7;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:var(--or);}
+button{font:inherit;}
+[hidden]{display:none !important;}
+
+/* Typographie */
+.q-etiquette{display:block;font-size:0.66rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--or);margin-bottom:0.9rem;}
+.q-titre-grand{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.3rem,7vw,4.2rem);line-height:1.05;color:var(--creme);margin:0 0 1rem;}
+.q-titre-grand em,.q-titre-moyen em{font-style:italic;color:var(--or);}
+.q-titre-moyen{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(1.8rem,5.5vw,2.8rem);line-height:1.15;color:var(--creme);margin:0 0 0.6rem;outline:none;}
+.q-mention{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.7;line-height:1.9;margin-top:1.6rem;}
+
+/* Boutons */
+.q-btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:0.6rem;min-height:52px;padding:0.9rem 2rem;border:1px solid var(--or);font-family:'Jost',sans-serif;font-weight:400;font-size:0.74rem;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background 0.3s,color 0.3s,transform 0.2s;-webkit-tap-highlight-color:transparent;}
+.q-btn:active{transform:scale(0.98);}
+.q-btn:focus-visible,.q-reponse:focus-visible,.q-retour:focus-visible,a:focus-visible{outline:2px solid var(--or-clair);outline-offset:3px;}
+.q-btn-or{background:var(--or);color:var(--noir);}
+.q-btn-or:hover{background:var(--or-clair);}
+.q-btn-contour{background:transparent;color:var(--or);}
+.q-btn-contour:hover{background:rgba(201,165,90,0.1);}
+.q-btn-whatsapp{background:var(--vert-wa);border-color:var(--vert-wa);color:var(--noir);font-weight:500;}
+.q-btn-whatsapp:hover{filter:brightness(1.08);}
+.q-btn-large{min-height:58px;padding:1rem 2.4rem;font-size:0.78rem;}
+.q-lien-or{color:var(--or);font-size:0.74rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--filet);padding-bottom:0.2rem;}
+
+/* En-tête et pied */
+.q-entete{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;border-bottom:1px solid rgba(201,165,90,0.12);background:rgba(8,6,4,0.92);}
+.q-entete-logo img{height:44px;width:auto;}
+.q-entete-lien{font-size:0.66rem;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;color:var(--or);}
+.q-pied{text-align:center;font-size:0.72rem;opacity:0.75;padding:1.6rem 1.25rem 2rem;border-top:1px solid rgba(201,165,90,0.12);}
+.q-pied p{margin:0;}
+.q-noscript{text-align:center;padding:2rem;}
+
+/* Scène et transitions */
+.q-scene{flex:1;position:relative;display:flex;flex-direction:column;}
+.q-ecran{animation:q-apparition 0.6s ease both;}
+@keyframes q-apparition{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+
+/* Introduction */
+.q-intro{position:relative;flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:4rem 1.4rem;min-height:calc(100vh - 77px);overflow:hidden;}
+.q-intro-fond{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,6,4,0.86) 0%,rgba(8,6,4,0.8) 50%,rgba(8,6,4,0.96) 100%),url('../img/accueil-large.webp') center/cover no-repeat;transform:scale(1.04);animation:q-lent 18s ease-in-out infinite alternate;}
+@keyframes q-lent{to{transform:scale(1.1);}}
+.q-intro-contenu{position:relative;max-width:640px;}
+.q-intro-texte{font-size:1.02rem;max-width:520px;margin:0 auto 2.4rem;opacity:0.92;}
+.q-intro-duree{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.72;margin-top:1.4rem;}
+
+/* Questions */
+.q-questions{max-width:720px;width:100%;margin:0 auto;padding:2rem 1.25rem 3rem;}
+.q-progression{margin-bottom:2.4rem;}
+.q-progression-barre{height:2px;background:rgba(201,165,90,0.16);overflow:hidden;}
+.q-progression-barre span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--or),var(--or-clair));transition:width 0.6s cubic-bezier(.4,0,.2,1);}
+.q-question{animation:q-apparition 0.5s ease both;}
+.q-question.sortie{animation:q-sortie 0.28s ease both;}
+@keyframes q-sortie{to{opacity:0;transform:translateX(-18px);}}
+.q-question-aide{font-size:0.88rem;opacity:0.75;margin:0 0 1.8rem;}
+.q-reponses{display:grid;gap:0.8rem;}
+.q-reponse{display:flex;align-items:center;gap:1rem;width:100%;min-height:64px;padding:1rem 1.2rem;text-align:left;background:var(--espresso);border:1px solid var(--filet);color:var(--texte);font-family:'Jost',sans-serif;font-weight:300;font-size:1rem;line-height:1.45;cursor:pointer;transition:border-color 0.25s,background 0.25s,transform 0.2s;-webkit-tap-highlight-color:transparent;}
+.q-reponse:hover{border-color:rgba(201,165,90,0.6);}
+.q-reponse:active{transform:scale(0.99);}
+.q-reponse-lettre{flex:none;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border:1px solid var(--filet);font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--or);}
+.q-reponse[aria-pressed="true"]{border-color:var(--or);background:rgba(201,165,90,0.12);}
+.q-reponse[aria-pressed="true"] .q-reponse-lettre{background:var(--or);color:var(--noir);border-color:var(--or);}
+.q-retour{margin-top:1.8rem;background:none;border:none;color:var(--or);font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;padding:0.6rem 0;min-height:44px;}
+.q-retour[disabled]{visibility:hidden;}
+
+/* Révélation */
+.q-revelation{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6rem;min-height:60vh;text-align:center;padding:2rem;}
+.q-revelation-anneau{width:84px;height:84px;border-radius:50%;border:1px solid rgba(201,165,90,0.25);border-top-color:var(--or);animation:q-tour 1.1s linear infinite;}
+@keyframes q-tour{to{transform:rotate(360deg);}}
+.q-revelation-texte{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;color:var(--or);margin:0;}
+
+/* Résultat */
+.q-resultat{max-width:1040px;width:100%;margin:0 auto;padding:2.6rem 1.25rem 3rem;}
+.q-resultat-tete{text-align:center;max-width:680px;margin:0 auto 2.6rem;}
+.q-accroche{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.45rem;color:var(--or);margin:0 0 1rem;}
+.q-presentation{font-size:1rem;opacity:0.92;margin:0;}
+.q-bouteille{display:grid;grid-template-columns:1fr;background:var(--espresso);border:1px solid var(--filet);}
+.q-bouteille-visuel{background:radial-gradient(ellipse at 50% 60%,rgba(201,165,90,0.16),transparent 70%);overflow:hidden;}
+.q-bouteille-visuel img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;animation:q-zoom 1.2s ease both;}
+@keyframes q-zoom{from{transform:scale(1.08);opacity:0;}to{transform:none;opacity:1;}}
+.q-bouteille-infos{padding:1.8rem 1.4rem 2rem;}
+.q-bouteille-nom{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;color:var(--creme);margin:0 0 0.4rem;}
+.q-bouteille-specs{font-size:0.82rem;letter-spacing:0.12em;color:var(--or-clair);margin:0 0 1.2rem;}
+.q-bouteille-texte{font-size:0.98rem;opacity:0.94;margin:0 0 1.2rem;}
+.q-badge{display:inline-block;font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--noir);background:var(--or);padding:0.25rem 0.6rem;margin-bottom:0.8rem;}
+.q-dispo{display:flex;align-items:center;gap:0.6rem;font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;margin:0 0 1.4rem;}
+.q-dispo::before{content:'';width:8px;height:8px;border-radius:50%;background:currentColor;flex:none;}
+.q-dispo.ok{color:#6FCF73;}
+.q-dispo.low{color:#E8C97A;}
+.q-dispo.out{color:#E9A0A0;}
+.q-actions{display:flex;flex-direction:column;gap:0.8rem;}
+.q-partage-retour{font-size:0.8rem;color:var(--or-clair);min-height:1.4em;margin:0.6rem 0 0;}
+.q-decouvrir{margin-top:2.4rem;}
+.q-decouvrir-titre{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.6rem;color:var(--creme);text-align:center;margin:0 0 1.2rem;}
+.q-decouvrir-carte{display:grid;grid-template-columns:110px 1fr;gap:1.1rem;align-items:center;background:var(--espresso);border:1px solid var(--filet);padding:1rem;}
+.q-decouvrir-carte img{width:110px;height:110px;object-fit:cover;}
+.q-decouvrir-nom{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--creme);margin:0;line-height:1.2;}
+.q-decouvrir-specs{font-size:0.74rem;letter-spacing:0.1em;color:var(--or-clair);margin:0.2rem 0 0.4rem;}
+.q-decouvrir-texte{font-size:0.86rem;opacity:0.9;margin:0;}
+.q-fin{display:flex;flex-direction:column;align-items:center;gap:1.2rem;text-align:center;margin-top:2.8rem;}
+
+/* Porte d'âge */
+.q-age{position:fixed;inset:0;z-index:50;background:rgba(8,6,4,0.98);display:flex;align-items:center;justify-content:center;padding:1.5rem;overflow-y:auto;}
+.q-age-boite{max-width:440px;text-align:center;animation:q-apparition 0.5s ease both;}
+.q-age-logo{width:150px;height:auto;margin:0 auto 1.6rem;}
+.q-age-question{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--or);margin:1.6rem 0;}
+.q-age-boutons{display:flex;flex-direction:column;gap:0.8rem;}
+
+/* Ordinateur */
+@media(min-width:820px){
+  .q-entete{padding:1.1rem 3rem;}
+  .q-entete-logo img{height:52px;}
+  .q-questions{padding-top:3.4rem;}
+  .q-reponses{grid-template-columns:1fr 1fr;}
+  .q-reponse{min-height:88px;}
+  .q-bouteille{grid-template-columns:1.05fr 1fr;align-items:center;}
+  .q-bouteille-infos{padding:2.6rem 2.6rem 2.8rem;}
+  .q-actions{flex-direction:row;flex-wrap:wrap;}
+  .q-decouvrir-carte{grid-template-columns:150px 1fr;max-width:720px;margin:0 auto;}
+  .q-decouvrir-carte img{width:150px;height:150px;}
+  .q-intro-fond{background:linear-gradient(180deg,rgba(8,6,4,0.84) 0%,rgba(8,6,4,0.76) 50%,rgba(8,6,4,0.95) 100%),url('../img/accueil-large.webp') center/cover no-repeat;}
+}
+@media(max-width:768px){
+  .q-intro-fond{background:linear-gradient(180deg,rgba(8,6,4,0.86) 0%,rgba(8,6,4,0.8) 50%,rgba(8,6,4,0.96) 100%),url('../img/accueil-mobile.webp') center/cover no-repeat;}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}

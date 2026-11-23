@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080604">
+<title>Quel est ton royaume Saveur Royale ? - Le quiz</title>
+<meta name="description" content="Sept questions pour découvrir votre royaume gustatif et la liqueur artisanale Saveur Royale faite pour vous.">
+<link rel="canonical" href="https://www.saveurroyale.com/quiz/">
+<meta property="og:title" content="Quel est ton royaume Saveur Royale ?">
+<meta property="og:description" content="Sept questions pour découvrir votre royaume gustatif et la liqueur faite pour vous.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.saveurroyale.com/quiz/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://www.saveurroyale.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../img/icone-1.png">
+<link rel="apple-touch-icon" href="../img/icone-180.png">
+<link rel="preload" as="image" href="../img/accueil-mobile.webp" media="(max-width:768px)">
+<link rel="preload" as="image" href="../img/accueil-large.webp" media="(min-width:769px)">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<!-- Porte d'âge (même clé que l'accueil : sessionStorage « ageVerified ») -->
+<div class="q-age" id="q-age" role="dialog" aria-modal="true" aria-labelledby="q-age-titre" hidden>
+  <div class="q-age-boite">
+    <img src="../img/logo.webp" alt="Saveur Royale" class="q-age-logo" width="160" height="102">
+    <h2 id="q-age-titre" class="q-titre-moyen">Bienvenue</h2>
+    <p>Ce quiz parle de liqueurs. Pour y accéder, vous devez être majeur(e).</p>
+    <p class="q-age-question">Avez-vous 18 ans ou plus ?</p>
+    <div class="q-age-boutons">
+      <button type="button" class="q-btn q-btn-or" data-age="oui">Oui, j'ai 18 ans ou plus</button>
+      <button type="button" class="q-btn q-btn-contour" data-age="non">Non</button>
+    </div>
+    <p class="q-mention">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+  </div>
+</div>
+
+<header class="q-entete">
+  <a href="/" class="q-entete-logo" aria-label="Retour au site Saveur Royale"><img src="../img/logo.webp" alt="Saveur Royale" width="94" height="60"></a>
+  <a href="/" class="q-entete-lien">Retour à la boutique</a>
+</header>
+
+<main id="q-scene" class="q-scene" aria-live="polite">
+
+  <!-- Introduction -->
+  <section class="q-ecran q-intro actif" id="q-intro" aria-labelledby="q-intro-titre">
+    <div class="q-intro-fond" aria-hidden="true"></div>
+    <div class="q-intro-contenu">
+      <span class="q-etiquette">Le quiz Saveur Royale</span>
+      <h1 id="q-intro-titre" class="q-titre-grand">Quel est ton <em>royaume</em>&nbsp;?</h1>
+      <p class="q-intro-texte">Sept questions sur vos envies, vos moments et vos saveurs préférées. À la fin, votre royaume gustatif se révèle, avec la liqueur artisanale qui vous ressemble.</p>
+      <button type="button" class="q-btn q-btn-or q-btn-large" id="q-commencer">Découvrir mon royaume</button>
+      <p class="q-intro-duree">7 questions · environ 1 minute · aucune donnée personnelle demandée</p>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section class="q-ecran q-questions" id="q-questions" aria-labelledby="q-question-titre" hidden>
+    <div class="q-progression" aria-hidden="true">
+      <div class="q-progression-barre"><span id="q-progression-remplie"></span></div>
+    </div>
+    <div class="q-question" id="q-question">
+      <span class="q-etiquette" id="q-question-numero">Question 1 sur 7</span>
+      <h2 class="q-titre-moyen" id="q-question-titre" tabindex="-1"></h2>
+      <p class="q-question-aide">Choisissez la réponse qui vous ressemble le plus.</p>
+      <div class="q-reponses" id="q-reponses" role="group" aria-labelledby="q-question-titre"></div>
+    </div>
+    <button type="button" class="q-retour" id="q-precedent">← Question précédente</button>
+  </section>
+
+  <!-- Révélation -->
+  <section class="q-ecran q-revelation" id="q-revelation" hidden>
+    <div class="q-revelation-anneau" aria-hidden="true"></div>
+    <p class="q-revelation-texte">Votre royaume se révèle…</p>
+  </section>
+
+  <!-- Résultat -->
+  <section class="q-ecran q-resultat" id="q-resultat" aria-labelledby="q-royaume-nom" hidden>
+    <div class="q-resultat-tete">
+      <span class="q-etiquette">Votre royaume gustatif</span>
+      <h2 class="q-titre-grand" id="q-royaume-nom" tabindex="-1"></h2>
+      <p class="q-accroche" id="q-royaume-accroche"></p>
+      <p class="q-presentation" id="q-royaume-presentation"></p>
+    </div>
+
+    <article class="q-bouteille" id="q-bouteille">
+      <div class="q-bouteille-visuel"><img id="q-bouteille-img" src="" alt="" width="650" height="650"></div>
+      <div class="q-bouteille-infos">
+        <span class="q-etiquette">Votre bouteille</span>
+        <span class="q-badge" id="q-bouteille-badge" hidden></span>
+        <h3 class="q-bouteille-nom" id="q-bouteille-nom"></h3>
+        <p class="q-bouteille-specs" id="q-bouteille-specs"></p>
+        <p class="q-bouteille-texte" id="q-bouteille-texte"></p>
+        <p class="q-dispo" id="q-dispo" hidden></p>
+        <div class="q-actions">
+          <a class="q-btn q-btn-whatsapp q-btn-large" id="q-commander" href="https://wa.me/2250544705530" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+          <button type="button" class="q-btn q-btn-contour" id="q-partager">Partager mon royaume</button>
+        </div>
+        <p class="q-partage-retour" id="q-partage-retour" role="status"></p>
+      </div>
+    </article>
+
+    <aside class="q-decouvrir" aria-labelledby="q-decouvrir-titre">
+      <h3 class="q-decouvrir-titre" id="q-decouvrir-titre">À découvrir aussi</h3>
+      <div class="q-decouvrir-carte">
+        <img id="q-decouvrir-img" src="" alt="" width="650" height="650" loading="lazy">
+        <div>
+          <span class="q-badge" id="q-decouvrir-badge" hidden></span>
+          <p class="q-decouvrir-nom" id="q-decouvrir-nom"></p>
+          <p class="q-decouvrir-specs" id="q-decouvrir-specs"></p>
+          <p class="q-decouvrir-texte" id="q-decouvrir-texte"></p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="q-fin">
+      <button type="button" class="q-btn q-btn-contour" id="q-recommencer">Refaire le quiz</button>
+      <a class="q-lien-or" href="/#produits">Voir toute la gamme</a>
+      <p class="q-mention">L'abus d'alcool est dangereux pour la santé. À consommer avec modération. Vente interdite aux mineurs.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="q-pied">
+  <p>© Saveur Royale® · Abidjan, Côte d'Ivoire · <a href="../mentions-legales.html">Mentions légales et CGV</a> · <a href="../confidentialite.html">Confidentialité</a></p>
+</footer>
+
+<noscript><p class="q-noscript">Ce quiz a besoin de JavaScript. <a href="https://wa.me/2250544705530">Contactez-nous sur WhatsApp</a> pour un conseil personnalisé.</p></noscript>
+<script src="moteur.js"></script>
+<script src="quiz.js"></script>
+<script data-goatcounter="https://saveurroyale.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

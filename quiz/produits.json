@@ -1,0 +1,100 @@
+{
+ "source": "index.html (const products), relevé le 22.11.2026. Nom « Liqueur de Bissap » pour la clé bissap (décision de Djibret).",
+ "volume_cl": 75,
+ "produits": {
+  "passion": {
+   "nom": "Passion",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/passion.webp",
+   "explication": "Un parfum exotique, une attaque douce et fruitée, des notes de miel et une finale ronde et chaleureuse."
+  },
+  "bissap": {
+   "nom": "Liqueur de Bissap",
+   "prix": 7000,
+   "degre": 35,
+   "categorie": "liqueur",
+   "image": "../img/bissap.webp",
+   "explication": "Parfum intense, robe pure, caractère corsé et longue finale : la saveur florale intense que vous recherchez."
+  },
+  "ananas": {
+   "nom": "Ananas",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/ananas.webp",
+   "explication": "Élaborée à partir d'ananas mûrs, elle offre une saveur douce et vanillée aux arômes tropicaux intenses. Pure, sur glace ou en cocktail."
+  },
+  "citron": {
+   "nom": "Citron",
+   "prix": 7000,
+   "degre": 35,
+   "categorie": "liqueur",
+   "image": "../img/citron.webp",
+   "explication": "Arôme intense de citron obtenu par infusion de zestes, adouci par une douceur subtile qui équilibre l'acidité : une fraîcheur franche, sans agressivité."
+  },
+  "mandarine": {
+   "nom": "Mandarine",
+   "prix": 7000,
+   "degre": 25,
+   "categorie": "liqueur",
+   "image": "../img/mandarine.webp",
+   "explication": "Fraîche et vive, entre douceur fruitée et légère amertume zestée, avec une finale longue et raffinée."
+  },
+  "chocolat": {
+   "nom": "Crème de Chocolat",
+   "prix": 10000,
+   "degre": 12,
+   "categorie": "creme",
+   "image": "../img/chocolat.webp",
+   "explication": "Ses notes de fèves de cacao, de pomme et de café répondent à votre goût pour une gourmandise cacaotée relevée d'une touche fruitée. Dégustez-la fraîche, ou réchauffez délicatement la portion servie au bain-marie — jamais la bouteille entière. Agitez avant ouverture."
+  },
+  "creme_bissap": {
+   "nom": "Crème de Bissap",
+   "prix": 7000,
+   "degre": 15,
+   "categorie": "creme",
+   "image": "../img/creme_bissap.webp",
+   "explication": "Texture sirupeuse, douces notes d'hibiscus mêlées d'arôme de menthe : le pendant tendre de notre liqueur de Bissap, idéal en cocktail."
+  },
+  "corossol": {
+   "nom": "Corossol",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/corossol.webp",
+   "explication": "Robe rosée, notes de pomme-cannelle : ce fruit charnu au jus laiteux donne une liqueur fraîche, ronde et inattendue.",
+   "badge": "Édition limitée"
+  },
+  "cocota": {
+   "nom": "Crème de Cocota",
+   "prix": 8000,
+   "degre": 15,
+   "categorie": "creme",
+   "image": "../img/cocota.webp",
+   "explication": "Robe dorée, notes sucrées et légèrement exotiques, onctuosité rare : la crème douce et délicatement acidulée que vous recherchez.",
+   "badge": "Édition limitée",
+   "explication_voisin": "Robe dorée, notes sucrées et légèrement exotiques, onctuosité rare. Une crème onctueuse aux notes douces et délicatement acidulées, pour découvrir une autre facette des saveurs de Cocota."
+  },
+  "liqueur_cocota": {
+   "nom": "Liqueur de Cocota",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/liqueur_cocota.webp",
+   "explication": "Plus affirmée que sa sœur la Crème, elle dévoile une pointe légèrement acidulée qui révèle ce fruit des savanes. À déguster pure sur glace.",
+   "badge": "Édition limitée"
+  },
+  "mangoustan": {
+   "nom": "Mangoustan",
+   "prix": 8000,
+   "degre": 25,
+   "categorie": "edition_limitee",
+   "image": "../img/mangoustan.webp",
+   "explication": "Une douceur veloutée et une note tannique : le fruit rare, à la structure affirmée, que votre palais recherche.",
+   "badge": "Édition limitée"
+  }
+ },
+ "badge_note": "Badge « Édition limitée » repris des fiches de index.html au 22.11.2026 (sans le nombre de bouteilles). À retirer ici dès qu'il disparaît de la fiche."
+}
