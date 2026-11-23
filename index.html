@@ -298,7 +298,7 @@ footer{display:flex;justify-content:space-between;align-items:center;}
 .tier-perks li{padding-left:1.2rem;position:relative;}.tier-perks li::before{content:'✦';color:var(--or);font-size:0.55rem;position:absolute;left:0;top:0.3rem;}
 #contact{background:var(--espresso);text-align:center;}
 .contact-inner{max-width:600px;margin:0 auto;}
-.contact-inner p{margin-top:1.2rem;opacity:0.55;font-size:0.85rem;line-height:1.9;}
+.contact-inner p{margin-top:1.2rem;opacity:0.8;font-size:0.85rem;line-height:1.9;}
 
 .livraison-info{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;}
 .livraison-item{display:flex;align-items:center;gap:0.8rem;border:1px solid rgba(201,165,90,0.2);padding:1rem 1.5rem;transition:border-color 0.3s;}
@@ -306,7 +306,7 @@ footer{display:flex;justify-content:space-between;align-items:center;}
 .livraison-icon{font-size:1.4rem;}
 .livraison-label{display:block;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--or);margin-bottom:0.3rem;}
 .livraison-val{display:block;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--creme);}
-.whatsapp-btn{display:inline-flex;align-items:center;gap:0.8rem;background:#25D366;color:white;padding:1.1rem 2.8rem;margin-top:2.5rem;font-family:'Jost',sans-serif;font-size:0.8rem;letter-spacing:0.15em;text-decoration:none;transition:all 0.3s;text-transform:uppercase;}
+.whatsapp-btn{display:inline-flex;align-items:center;gap:0.8rem;background:#25D366;color:var(--noir);font-weight:500;padding:1.1rem 2.8rem;margin-top:2.5rem;font-family:'Jost',sans-serif;font-size:0.8rem;letter-spacing:0.15em;text-decoration:none;transition:all 0.3s;text-transform:uppercase;}
 .whatsapp-btn:hover{background:#128C7E;transform:translateY(-2px);}
 
 .social-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1.5rem;}
@@ -316,7 +316,7 @@ footer{display:flex;justify-content:space-between;align-items:center;}
 footer{background:var(--noir);text-align:center;padding:2.5rem 2rem;border-top:1px solid rgba(201,165,90,0.08);}
 .footer-logo{height:64px;width:auto;margin-bottom:1rem;}
 .mention-legale{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(201,165,90,0.1);font-size:0.65rem !important;letter-spacing:0.15em;text-transform:uppercase;opacity:0.5 !important;line-height:2 !important;}
-footer p{font-size:0.72rem;opacity:0.35;letter-spacing:0.08em;line-height:1.8;}
+footer p{font-size:0.72rem;opacity:0.85;letter-spacing:0.08em;line-height:1.8;}
 .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:200;opacity:0;pointer-events:none;transition:opacity 0.3s;}
 .cart-overlay.open{opacity:1;pointer-events:all;}
 .cart-panel{position:fixed;top:0;right:0;bottom:0;width:390px;background:#0D0907;z-index:201;transform:translateX(100%);transition:transform 0.4s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;border-left:1px solid rgba(201,165,90,0.2);}
@@ -364,7 +364,7 @@ footer p{font-size:0.72rem;opacity:0.35;letter-spacing:0.08em;line-height:1.8;}
 .valeur-card:hover{transform:translateY(-5px);}
 .valeur-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--or),transparent);transform:scaleX(0);transition:transform 0.4s;}
 .valeur-card:hover::after{transform:scaleX(1);}
-.valeur-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:rgba(201,165,90,0.5);font-weight:300;line-height:1;margin-bottom:1rem;}
+.valeur-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:rgba(201,165,90,0.65);font-weight:300;line-height:1;margin-bottom:1rem;}
 .valeur-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--or);margin-bottom:1rem;}
 .valeur-desc{font-size:0.82rem;line-height:1.9;opacity:0.6;}
 
@@ -1141,7 +1141,7 @@ h3.product-cat-label,h4.product-name{margin-top:0;font-weight:inherit;}
 /* Bouton WhatsApp flottant */
 .wa-float{position:fixed;right:16px;bottom:20px;z-index:150;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.45);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity 0.3s,transform 0.3s;}
 .wa-float.visible{opacity:1;transform:none;pointer-events:auto;}
-.footer-links{margin-top:0.8rem;font-size:0.7rem;letter-spacing:0.1em;}.footer-links a{color:rgba(201,165,90,0.85);text-decoration:none;}
+.footer-links{margin-top:0.8rem;font-size:0.7rem;letter-spacing:0.1em;}.footer-links a{color:var(--or);text-decoration:none;}
 /* Téléphones : rien ne dépasse de l'écran (sinon la page entière est dézoomée) */
 @media(max-width:768px){footer{flex-direction:column;}}
 @media(max-width:480px){.products-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.pro-form-row{grid-template-columns:1fr;gap:0;margin-bottom:0;}.univers-grid{grid-template-columns:minmax(0,1fr) !important;}}
@@ -1745,7 +1745,7 @@ try{if(localStorage.getItem('sr-cookies')==='oui')srChargerPixel();}catch(e){}</
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
     </a>
   </div>
-  <p><a href="mailto:saveurroyale@gmail.com" style="color:rgba(201,165,90,0.85);text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">saveurroyale@gmail.com</a>
+  <p><a href="mailto:saveurroyale@gmail.com" style="color:var(--or);text-decoration:none;font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.5rem;">saveurroyale@gmail.com</a>
   © 2014–2026 Saveur Royale® · Abidjan, Côte d'Ivoire<br>Liqueurs artisanales d'exception<br>Saveur Royale® est une marque déposée. Tous droits réservés.</p>
   <p class="footer-links"><a href="mentions-legales.html">Mentions légales et CGV</a> · <a href="confidentialite.html">Confidentialité</a></p>
   <p class="mention-legale">L'abus d'alcool est dangereux pour la santé.<br>À consommer avec modération. Vente interdite aux mineurs.</p>
